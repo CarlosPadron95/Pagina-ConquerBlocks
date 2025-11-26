@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as *;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 165px;
+  border-top: 1px solid $azul_claro;
+  figure {
+    margin: 0;
+    padding: 0;
+    img {
+      width: 250px;
+      background-color: white;
+      border: 3px solid $azul_claro;
+      border-radius: 16px;
+    }
+  }
+  p {
+    color: $azul_claro;
+    font-size: 16px;
+    a {
+      color: $azul_claro;
+      font-size: 16px;
+    }
+  }
+}

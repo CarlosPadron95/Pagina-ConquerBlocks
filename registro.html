@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Registro | Conquer Blocks</title>
+    <meta name="description" content="Registro" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-Conquer.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <figure>
+        <img
+          src="img/common/Conquer-Blocks-logo.avif"
+          alt="Logotipo de Conquer Blocks"
+          width="150px"
+        />
+      </figure>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="quienes-somos.html">Quienes somos</a></li>
+          <li>
+            <a href="cursos.html">Cursos</a>
+            <ul class="dropdown">
+              <li>
+                <a href="cursos/curso-fullstack.html">Desarrollo Fullstack</a>
+              </li>
+              <li>
+                <a href="cursos/curso-ia.html">Inteligencia Artificial</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <p>Registro</p>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="registro">
+          <section class="registro_title">
+            <h2>Registro</h2>
+            <h3>
+              Para poder acceder a nuestra academia necesitamos que te
+              registres.
+            </h3>
+          </section>
+          <form class="form" action="post" enctype="multipart/form-data">
+            <p>
+              <label for="name">Nombre completo</label>
+              <input type="text" name="name" id="name" required />
+            </p>
+            <p>
+              <label for="birthdate">Fecha de nacimiento</label>
+              <input type="date" name="birthdate" id="birthdate" required />
+            </p>
+            <p>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </p>
+            <p>
+              <label for="address">Dirección</label>
+              <input type="text" name="address" id="address" required />
+            </p>
+            <p>
+              <label for="web">Página web</label>
+              <input type="url" name="web" id="web" required />
+            </p>
+            <p>
+              <label for="photo">Sube tu foto</label>
+              <input type="file" name="photo" id="photo" required />
+            </p>
+            <p>
+              <label for="bio">Biografía</label> <br />
+              <textarea
+                name="bio"
+                id="bio"
+                cols="30"
+                rows="5"
+                required
+              ></textarea>
+            </p>
+            <p>
+              <button>Enviar</button>
+              <input type="reset" value="Borrar formulario" />
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <figure>
+        <img
+          src="img/common/Conquer-Blocks-logo.avif"
+          alt="Logotipo de Conquer Blocks"
+          width="150px"
+        />
+      </figure>
+      <div class="footer_conquer">
+        <p>© ConquerBlocks 2025 - <a href="aviso-legal.html">Aviso Legal</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

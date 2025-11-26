@@ -1,0 +1,169 @@
+@use "../abstracts/variables" as *;
+
+.hero {
+  display: flex;
+  padding-top: 52px;
+  gap: 40px;
+
+  &_info {
+    position: relative;
+    h1 {
+      line-height: 94px;
+      width: 95%;
+      span {
+        display: inline-block;
+        &::after {
+          content: "";
+          width: 101%;
+          height: 4px;
+          background-color: $azul_claro;
+          display: block;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  figure {
+    position: relative;
+    bottom: -5px;
+    margin: 0;
+    width: 100%;
+    .overlay {
+      position: relative;
+      width: 100%;
+      height: auto;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 2;
+      }
+    }
+    img {
+      height: auto;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  p {
+    font-size: 24px;
+    margin-top: 19px;
+    line-height: 36px;
+    text-align: center;
+  }
+}
+
+.quienes_hero {
+  border-bottom: 4px solid $azul_claro;
+  padding-bottom: 66px;
+  &_title {
+    padding-top: 52px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  &_subtitle {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.cursos {
+  padding: 52px 0 96px;
+  &_hero {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 66px;
+    border-bottom: 4px solid $azul_claro;
+    .hero_info {
+      h2 {
+        span {
+          display: inline-block;
+          &::after {
+            content: "";
+            width: 101%;
+            height: 4px;
+            background-color: $azul_claro;
+            display: block;
+            border-radius: 4px;
+          }
+        }
+      }
+      p.cursos_hero_subtitle {
+        text-align: start;
+      }
+    }
+    figure {
+      position: relative;
+      width: 555px;
+      margin: 0;
+      padding: 0;
+      .overlay {
+        position: relative;
+        width: 100%;
+        height: auto;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.2);
+          z-index: 2;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.blog_hero {
+  padding: 52px 0 66px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 4px solid $azul_claro;
+  &_info {
+    position: relative;
+    top: 80px;
+    h2 {
+      text-align: center;
+      margin: 0;
+    }
+    p {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  figure {
+    .overlay {
+      position: relative;
+      width: 100%;
+      height: auto;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 2;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

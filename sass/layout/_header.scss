@@ -1,0 +1,85 @@
+@use "../abstracts/variables" as *;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+  padding: 26px 165px;
+  border-bottom: 1px solid $azul_claro;
+  figure {
+    margin: 0;
+    padding: 0;
+    img {
+      width: 250px;
+      background-color: white;
+      border: 3px solid $azul_claro;
+      border-radius: 16px;
+    }
+  }
+  nav {
+    padding: 0;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      gap: 28px;
+      list-style: none;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      p {
+        text-decoration: underline;
+        color: $azul_claro;
+        margin: 0;
+      }
+      li {
+        position: relative;
+        a {
+          text-decoration: none;
+          font-weight: 400;
+          &:hover {
+            text-decoration: underline;
+            color: $azul_claro;
+          }
+        }
+        .dropdown {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: $azul_oscuro;
+          list-style: none;
+          padding: 10px 0;
+          margin: 0;
+          padding-top: 10px;
+          min-width: 220px;
+          border-radius: 8px;
+          border: 1px solid $azul_claro;
+          z-index: 1001;
+          flex-direction: column;
+          gap: 0;
+
+          li {
+            padding: 0;
+
+            a {
+              display: block;
+              padding: 12px 12px;
+              white-space: nowrap;
+
+              &:hover {
+                color: $azul_claro;
+              }
+            }
+            &:first-child a {
+              border-bottom: 1px solid $azul_claro;
+            }
+          }
+        }
+        &:hover .dropdown {
+          display: flex;
+        }
+      }
+    }
+  }
+}
