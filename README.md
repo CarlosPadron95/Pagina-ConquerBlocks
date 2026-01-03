@@ -11,7 +11,7 @@
 ---
 
 <a name="español"></a>
-## 🇪🇸 Versión en Español
+## Versión en Español
 
 Este proyecto consiste en el desarrollo de una Landing Page institucional completa para la academia **ConquerBlocks**. El objetivo principal fue dominar la arquitectura de documentos HTML5 y la transición de CSS plano hacia **SCSS**, permitiendo una gestión de estilos mucho más eficiente y escalable.
 
@@ -28,7 +28,7 @@ Puedes ver la web funcionando aquí: [**VER PROYECTO**](https://carlospadron95.g
 ---
 
 <a name="english"></a>
-## 🇺🇸 English Version
+## English Version
 
 This project involves the development of a complete institutional Landing Page for the **ConquerBlocks** academy. The main goal was to master complex HTML5 document architecture and the transition from plain CSS to **SCSS**, enabling more efficient and scalable style management.
 
