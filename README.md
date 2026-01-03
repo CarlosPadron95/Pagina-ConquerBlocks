@@ -53,7 +53,3 @@ You can check the live site here: [**VIEW PROJECT**](https://carlospadron95.gith
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:carlospadrondelgado@gmail.com)
 
 ⭐ Si te gustó este proyecto, dale una estrella / If you liked this project, give it a star!
-
-
-interfaces sólidas y estructuradas.
-**Full-Stack Developer in training** | Building solid and structured interfaces.
